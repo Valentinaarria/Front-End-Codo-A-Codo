@@ -1,0 +1,18 @@
+#contact{
+    background-image: url("../images/contacto.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .contact_body{
+    height: 570px;
+  }
+
+  .valid{
+    border-color: darkgreen;
+  }
+
+  .invalid{
+    border-color: red;
+  }
+

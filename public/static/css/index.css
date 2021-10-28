@@ -1,0 +1,25 @@
+body {
+    margin:0;
+}
+
+
+#Landing{
+    height: 650px;
+    background-image: url("../images/landingpage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .button_section{
+      width: 14%;
+      margin: 0 43%;
+  }
+
+  .start_button{
+      width: 100%;
+      border-radius: 10px;
+      background-color: aquamarine;
+      padding: 1.5em 2em;
+      margin: 30em 0em;
+      cursor: pointer;
+  }
