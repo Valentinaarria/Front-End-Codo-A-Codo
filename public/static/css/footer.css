@@ -18,9 +18,7 @@
  
   .footer > * {
     flex:  1 100%;
-  }
-  
-   
+  }   
   
    .footer__logo {
     width: 25%;
@@ -40,8 +38,6 @@
     margin: 0;
 
   }
-  
-
  
   .footer ul {
     list-style: none;
@@ -93,6 +89,31 @@
   
   .heart {
     color: #fff;
+  }
+
+  @media (max-width: 768px){
+    .footer__logo {
+      width: 60%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 568px){
+    
+    .footer {          
+      padding: 15px 20px;      
+      height: 280px;
+    }
+
+    .footer > * {
+      flex: 1 35%;
+    } 
+
+    .footer__logo {
+      width: 55%;
+      height: auto;
+    }  
+     
   }
   
   @media screen and (min-width: 24.375em) {

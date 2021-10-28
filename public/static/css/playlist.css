@@ -26,6 +26,18 @@ body{
   display:table-cell;
   list-style: none;
 }
+
+.cards {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 1rem 5vw;
+  padding: 0;
+  list-style-type: none;
+  overflow: scroll;
+}
+
 .music_ul li{
   color: #000;
   background-color: #32193a79;
@@ -33,14 +45,12 @@ body{
   border-radius: 15px ;
   margin: 10px;
   opacity: 0.7;
-  
-
-
 }
 
 .next_song_list{
-  display:inline-block;
-  height: 380px;
+  display:flex;
+  flex-direction: column;
+  height: 400px;
   background-color: #49405cab;
   width: 70%;
   margin: 3em 3em;
@@ -61,4 +71,71 @@ body{
   margin: 1em 10% 2em 20%;
   border-radius: 15px;
   flex-shrink: 0;
+}
+
+@media (max-width: 998px){
+
+  #playlist{
+    height: 650px;    
+  }
+
+  .music_ul{
+    width:100%;
+  }
+
+  .music_ul li{
+    width:100%;
+    margin-left: 2em;
+  }
+  
+
+.playlist_list{  
+  width: 25%; 
+  height: 500px; 
+  margin: 2em 2em 3em 4em; 
+}
+
+.next_song_list{ 
+  height: 500px;  
+  width: 50%;
+  margin: 2em 3em;  
+}
+
+.cards{
+  margin-left: 3em;
+}
+
+.music_player{
+  margin: 0em 10% 3em 20%;
+}
+
+}
+
+@media (max-width: 568px){
+
+  #playlist{
+    display: block;
+    height: 1150px;    
+  }
+
+.playlist_list{  
+  width: 50%; 
+  height: 500px; 
+  margin: 2em 2em 3em 4em; 
+}
+
+.next_song_list{ 
+  height: 410px;  
+  width: 80%;
+  margin: 2em 3em;  
+}
+
+.cards{
+  margin-left: 3em;
+}
+
+.music_player{
+  margin: 0em 5% 3em 12%;
+}
+
 }

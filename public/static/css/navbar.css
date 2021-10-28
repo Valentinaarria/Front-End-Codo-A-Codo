@@ -61,10 +61,10 @@
     left: 0; 
       }
  nav ul .button{
-        text-decoration: none;
-        padding: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
         
       }
 
@@ -77,8 +77,22 @@
   }
 
 
-  @media screen and (max-height: 300px) {
-      ul {
-          margin-top: 40px;
-      }
+  @media (max-width: 568px){
+
+    nav {
+      margin: 0;
+      font: bold 12px/1.4 'Open Sans', arial, sans-serif;
+      background: #2F263A;
+    }
+
+    .logo{
+      width: 20% !important;      
+    }
+
+    .navbar__logo {
+      margin: 0 0 0 30px !important;
+      width: 75%;
+      height: auto;
+    } 
+   
   }

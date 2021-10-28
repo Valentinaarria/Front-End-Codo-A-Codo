@@ -17,7 +17,7 @@
 
 
 .modal{
-    background: linear-gradient(0deg,white 65%, crimson 35%);
+    background: linear-gradient(0deg,white 65%, #2F263A 35%);
     width: 600px;
     height: 300px;
     top: 50%;
