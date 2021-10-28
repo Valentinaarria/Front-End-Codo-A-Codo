@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/navbar.css">
+  <link rel="stylesheet" href="../static/css/footer.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="stylesheet" href="../static/css/modal.css">
+  <!-- <script src="../static/js/modal.js"></script> -->
+  <title>SoundMatch</title>
+</head>
+
+<body>
+  <div>
+    <nav>
+      <ul class="menu">
+        <li class="logo">
+          <a href="#">
+            <span>
+              <img class="navbar__logo" src="../static/images/Logo.png" alt="">
+            </span>
+          </a>
+        </li>
+        <li class="item"><a href="./playlist.html">Playlist</a></li>
+        <li class="item"><a href="./contactus.html">Contact Us</a> </li>
+        <li class="item button" id="btnabrir"><a href="#">Log In</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i> </a></li>
+
+
+  </div>
+  </ul>
+  </nav>
+  </div>
+
+  <div id="Landing">
+
+    <!-- <div class="page">
+      <a href="#" class="boton" id="btnabrir">ABRIR VENTANA</a>
+    </div> -->
+
+    <div class="fondo_transparente">
+      <div class="modal">
+        <div class="modal_cerrar">
+          <span>x</span>
+        </div>
+        <div class="modal_titulo">Log in into the app</div>
+        <form>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control pass" id="Firstname" placeholder="Type your password">
+          </div>
+
+          <div class="modal_botones">
+            <button type="submit" class="">Submit</button>
+          </div>
+
+      </div>
+      </form>
+
+
+    </div>
+    <div class="button_section">
+      <button type="submit" class="start_button">Get Started</button>
+    </div>
+  </div>
+  </div>
+
+  <div>
+    <footer class="footer">
+      <div class="footer__addr">
+        <span>
+          <img class="footer__logo" src="../static/images/Logo.png" alt="">
+        </span>
+
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Categories</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="./contactus.html">Contact Us </a>
+            </li>
+            <li>
+              <a href="#">Playlist </a>
+            </li>
+
+          </ul>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2021 SoundMatch. All rights reserved.</p>
+
+        <div class="legal__links">
+          <span>Made with <span class="heart">♥</span> </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("btnabrir").addEventListener("click", function () {
+      document.getElementsByClassName("fondo_transparente")[0].style.display = "block"
+      return false
+    })
+    document.getElementsByClassName("modal_cerrar")[0].addEventListener("click", function () {
+      document.getElementsByClassName("fondo_transparente")[0].style.display = "none"
+    })
+  </script>
+
+</body>
+
+</html>

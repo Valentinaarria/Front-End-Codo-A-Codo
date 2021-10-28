@@ -1,0 +1,64 @@
+
+body{
+  margin: 0;
+   color: #2F263A;
+   background-color:#7a758194;
+
+}
+
+#playlist{
+  height: 500px;
+  display: flex;
+}
+
+.playlist_list{
+  display:inline-block;
+  height: 380px;
+  background-color: #49405cab;
+  width: 15%;
+  margin: 3em 2em 3em 4em; 
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.music_ul{
+  padding: 1.5em 1em;
+  display:table-cell;
+  list-style: none;
+}
+.music_ul li{
+  color: #000;
+  background-color: #32193a79;
+  padding: 0.5em 3em;
+  border-radius: 15px ;
+  margin: 10px;
+  opacity: 0.7;
+  
+
+
+}
+
+.next_song_list{
+  display:inline-block;
+  height: 380px;
+  background-color: #49405cab;
+  width: 70%;
+  margin: 3em 3em;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.next_song_title{
+  color: #2F263A;
+  text-align: center;
+}
+
+.music_player{
+  display:block;
+  height: 80px;
+  background-color: #49405cab;
+  width: 70%;
+  margin: 1em 10% 2em 20%;
+  border-radius: 15px;
+  flex-shrink: 0;
+}

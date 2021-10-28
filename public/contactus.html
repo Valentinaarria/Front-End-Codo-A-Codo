@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/navbar.css">
+  <link rel="stylesheet" href="../static/css/footer.css">
+  <link rel="stylesheet" href="../static/css/contact.css">
+
+</head>
+
+<body>
+  <div>
+    <nav>
+      <ul class="menu">
+        <li class="logo">
+          <a href="#">
+            <span>
+              <img class="navbar__logo" src="../static/images/Logo.png" alt="">
+            </span>
+          </a>
+        </li>
+        <li class="item"><a href="./Index.html">Home</a></li>
+        <li class="item"><a href="./playlist.html">Playlist</a></li>
+        <li class="item button"><a href="#">Log In</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i> </a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="row contact_body my-5 mr-5">
+
+    <div class="col-1">
+    </div>
+
+    <div class="col-5" id="contact">
+    </div>
+
+    <div class="col-5">
+      <form novalidate>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="Firstname">First Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="type your first name">
+        </div>
+        <div class="form-group">
+          <label for="lastname"> Last Name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="type your last name">
+        </div>
+
+        <div class="form-group">
+          <label for="Message">Type your Message</label>
+          <textarea class="form-control" id="Message" rows="3"></textarea>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </form>
+
+  </div>
+  <div class="col-1">
+  </div>
+
+  </div>
+
+  <div>
+    <footer class="footer">
+      <div class="footer__addr">
+        <span>
+          <img class="footer__logo" src="../static/images/Logo.png" alt="">
+        </span>
+
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Categories</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="./contactus.html">Contact Us </a>
+            </li>
+            <li>
+              <a href="#">Playlist </a>
+            </li>
+
+          </ul>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2021 SoundMatch. All rights reserved.</p>
+
+        <div class="legal__links">
+          <span>Made with <span class="heart">♥</span> </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const form = document.getElementsByTagName('form')[0];
+    const email = document.getElementById('email');
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName')
+
+    let error = email.nextElementSibling;    
+
+    const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    function addEvent(element, event, callback) {
+      let previousEventCallBack = element["on" + event];
+      element["on" + event] = function (e) {
+        const output = callback(e);
+
+        if (output === false) return false;
+
+        if (typeof previousEventCallBack === 'function') {
+          output = previousEventCallBack(e);
+          if (output === false) return false;
+        }
+      }
+    };
+
+    addEvent(window, "load", function () {
+      const test = email.value.length != 0 || emailRegExp.test(email.value);
+      const status  = test ? "valid" : "invalid";
+      email.classList.add(status);      
+
+      const nameTest = firstName.value.length != 0;
+      const nameStatus  = nameTest ? "valid" : "invalid";
+      firstName.classList.add(nameStatus);
+      
+
+      const lastNameTest = lastName.value.length != 0;
+      const lastStatus  = lastNameTest ? "valid" : "invalid";
+      lastName.classList.add(lastStatus);
+      
+    });
+
+    addEvent(email, "input", function () {
+      const test = email.value.length === 0 || emailRegExp.test(email.value);
+      email.classList.remove("valid");
+      email.classList.remove("invalid");
+      if (test) {
+        email.classList.add("valid");
+        error.innerHTML = "";
+        error.className = "error";
+      } else {
+        email.classList.add("invalid");
+      }
+    });
+
+    addEvent(firstName, "input", function () {
+      const test = firstName.value.length != 0;
+      firstName.classList.remove("valid");
+      firstName.classList.remove("invalid");
+      if (test) {
+        firstName.classList.add("valid");
+        error.innerHTML = "";
+        error.className = "error";
+      } else {
+        firstName.classList.add("invalid");
+      }
+    });
+
+    addEvent(lastName, "input", function () {
+      const test = lastName.value.length != 0;
+      lastName.classList.remove("valid");
+      lastName.classList.remove("invalid");
+      if (test) {
+        lastName.classList.add("valid");
+        error.innerHTML = "";
+        error.className = "error";
+      } else {
+        lastName.classList.add("invalid");
+      }
+    });
+
+    addEvent(form, "submit", function () {
+      const test = email.value.length === 0 || emailRegExp.test(email.value); 
+
+      if (!test) {   
+        alert("Invalid email address!");        
+        return false;
+      }
+
+      const nameTest = firstName.value.length != 0; 
+      
+      if (!test) {   
+        alert("Empty Name");        
+        return false;
+      } 
+
+      const lastNameTest = lastName.value.length != 0;
+
+      if (!test) {   
+        alert("Empty Last Name");        
+        return false;
+      } 
+
+      
+    });
+  </script>
+</body>
+
+</html>

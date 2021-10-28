@@ -1,0 +1,84 @@
+  nav {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    background: #2F263A;
+  }
+  nav ul { 
+    margin:0px !important; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 100%;
+    text-align: left;
+  }
+
+  .logo{
+    
+    width: 40% !important;
+  }
+
+  .links{
+    width: 20% !important;
+  }
+
+.navbar__logo {
+    margin: 0 0 0 80px !important;
+    width: 33%;
+    height: auto;
+  } 
+ nav ul li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+    vertical-align: middle;
+  }
+  nav ul .item a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  nav ul .item a:after {  
+    color:#fff;  
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  nav ul .item a:hover:after { 
+    color:#fff;
+    width: 100%; 
+    left: 0; 
+      }
+ nav ul .button{
+        text-decoration: none;
+        padding: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+      }
+
+ nav ul .button a{
+    color:#fff;
+    text-decoration:none;
+    padding:15px 20px;
+    border-radius: 20px;
+    border: 2px solid #fff
+  }
+
+
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
