@@ -15,7 +15,7 @@ body{
   display:inline-block;
   height: 380px;
   background-color: #49405cab;
-  width: 15%;
+  width: 20%;
   margin: 3em 2em 3em 4em; 
   border-radius: 15px;
   flex-shrink: 0;
@@ -39,7 +39,7 @@ body{
 }
 
 .music_ul li{
-  color: #000;
+  color: #fff;
   background-color: #32193a79;
   padding: 0.5em 3em;
   border-radius: 15px ;
@@ -52,14 +52,14 @@ body{
   flex-direction: column;
   height: 400px;
   background-color: #49405cab;
-  width: 70%;
+  width: 65%;
   margin: 3em 3em;
   border-radius: 15px;
   flex-shrink: 0;
 }
 
 .next_song_title{
-  color: #2F263A;
+  color: #fff;
   text-align: center;
 }
 

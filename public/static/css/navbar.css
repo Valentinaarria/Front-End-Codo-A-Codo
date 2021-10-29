@@ -60,6 +60,27 @@
     width: 100%; 
     left: 0; 
       }
+
+  nav ul .button a:after {  
+    color:#fff;  
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: transparent;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+      }
+  nav ul .button a:hover:after { 
+    color:#fff;
+    width: 100%; 
+    left: 0; 
+          }
+
+      
  nav ul .button{
     text-decoration: none;
     padding: 3px;

@@ -10,11 +10,13 @@
   <link rel="stylesheet" href="static/css/navbar.css">
   <link rel="stylesheet" href="static/css/footer.css">
   <link rel="stylesheet" href="static/css/contact.css">
+  <link rel="stylesheet" href="static/css/modal.css">
   <script src="https://kit.fontawesome.com/9ff4627614.js" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/modal.css">
 </head>
 
 <body>
@@ -30,7 +32,7 @@
         </li>
         <li class="item"><a href="./Index.html">Home</a></li>
         <li class="item"><a href="./playlist.html">Playlist</a></li>
-        <li class="item button"><a href="#">Log In</a></li>
+        <li class="item button" id="btnabrir"><a href="#">Log In</a></li>
         
       </ul>
     </nav>
@@ -38,6 +40,30 @@
 
 
   <div class="row contact_body my-5 mr-5">
+
+    <div class="fondo_transparente">
+      <div class="modal">
+        <div class="modal_cerrar">
+          <span>x</span>
+        </div>
+        <div class="modal_titulo">Log in into the app</div>
+        <form>
+          <div class="">
+            <label for="email_log">Email address</label>
+            <input type="email" class="" id="email_log" placeholder="name@example.com">
+          </div>
+          <div class="">
+            <label for="Password">Password</label>
+            <input type="password" class="pass" id="Firstname" placeholder="Type your password">
+          </div>
+
+          <div class="modal_botones">
+            <button type="submit" class="">Submit</button>
+          </div>
+
+      </div>
+      </form>
+    </div>
 
     <div class="col-1">
     </div>
@@ -130,10 +156,19 @@
   </div>
 
   <script>
-    const form = document.getElementsByTagName('form')[0];
+
+    document.getElementById("btnabrir").addEventListener("click", function () {
+      document.getElementsByClassName("fondo_transparente")[0].style.display = "block"
+      return false
+    });
+    document.getElementsByClassName("modal_cerrar")[0].addEventListener("click", function () {
+      document.getElementsByClassName("fondo_transparente")[0].style.display = "none"
+    });
+
+    const form = document.getElementsByTagName('form')[1];
     const email = document.getElementById('email');
     const firstName = document.getElementById('firstName');
-    const lastName = document.getElementById('lastName')
+    const lastName = document.getElementById('lastName');
 
     let error = email.nextElementSibling;    
 
@@ -152,22 +187,6 @@
         }
       }
     };
-
-    // addEvent(window, "load", function () {
-    //   const test = email.value.length != 0 || emailRegExp.test(email.value);
-    //   const status  = test ? "valid" : "invalid";
-    //   email.classList.add(status);      
-
-    //   const nameTest = firstName.value.length != 0;
-    //   const nameStatus  = nameTest ? "valid" : "invalid";
-    //   firstName.classList.add(nameStatus);
-      
-
-    //   const lastNameTest = lastName.value.length != 0;
-    //   const lastStatus  = lastNameTest ? "valid" : "invalid";
-    //   lastName.classList.add(lastStatus);
-      
-    // });
 
     addEvent(email, "input", function () {
       const test = email.value.length === 0 || emailRegExp.test(email.value);
@@ -209,25 +228,25 @@
     });
 
     addEvent(form, "submit", function () {
-      const test = email.value.length === 0 || emailRegExp.test(email.value); 
+      const test = email.value.length > 0 || emailRegExp.test(email.value); 
 
       if (!test) {   
         alert("Invalid email address!");        
-        return false;
+        
       }
 
-      const nameTest = firstName.value.length != 0; 
+      const nameTest = firstName.value.length >= 3; 
       
-      if (!test) {   
-        alert("Empty Name");        
-        return false;
+      if (!nameTest) {   
+        alert("Name too short");        
+       
       } 
 
-      const lastNameTest = lastName.value.length != 0;
+      const lastNameTest = lastName.value.length >= 3;
 
-      if (!test) {   
-        alert("Empty Last Name");        
-        return false;
+      if (!lastNameTest) {   
+        alert("Last Name too short");        
+       
       } 
 
       

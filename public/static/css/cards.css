@@ -24,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #9bdc28;
+  background: #d4eff871;    
   clip-path: circle(150px at 80% 20%);
   transition: 0.5s ease-in-out;
 }
@@ -41,7 +41,8 @@
   font-size: 6em;
   font-weight: 800;
   font-style: italic;
-  color: rgba(255,255,25,0.05)
+  color: #D4EFF8;
+  opacity:0.25;
 }
 
 .container .card .imgBx{
@@ -139,20 +140,20 @@
 }
 
 .container .card .contentBx .size span:hover{
-  background: #9bdc28;
+  background: #D4EFF8;
 }
 
 .container .card .contentBx .color span{
   width: 20px;
   height: 20px;
-  background: #ff0;
+  background: #D4EFF8;
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .container .card .contentBx .color span:nth-child(2){
-  background: #9bdc28;
+  background: #D4EFF8;
 }
 
 .container .card .contentBx .color span:nth-child(3){
