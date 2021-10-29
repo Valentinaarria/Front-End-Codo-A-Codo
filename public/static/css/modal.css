@@ -50,6 +50,7 @@
 .modal_titulo{
     color: white;
     font-size: 40px;
+    font:'Open Sans', arial, sans-serif;
 }
 .modal_mensaje{            
    padding: 10px 30px;

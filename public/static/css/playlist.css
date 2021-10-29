@@ -45,6 +45,7 @@ body{
   border-radius: 15px ;
   margin: 10px;
   opacity: 0.7;
+  width: 100%;
 }
 
 .next_song_list{

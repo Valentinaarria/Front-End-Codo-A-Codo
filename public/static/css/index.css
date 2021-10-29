@@ -21,6 +21,7 @@ body {
       padding-top: 5%;
       font-size: x-large;
       font-weight: bold;
+      font: bold 3em/1.4 'Open Sans', arial, sans-serif;
   }
 
   .start_button{
@@ -29,5 +30,6 @@ body {
       background-color: #3377B6;
       padding: 1.5em 3em;
       margin: 30em 0em;
+      font: bold 0.80em/1.4 'Open Sans', arial, sans-serif;
       cursor: pointer;
   }
