@@ -123,8 +123,8 @@
 }
 
 .container .card .contentBx .size span{
-  width: 26px;
-  height: 26px;
+  width: 75%;
+  height: 40px;
   text-align: center;
   line-height: 26px;
   font-size: 14px;
