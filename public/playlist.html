@@ -39,42 +39,33 @@
   <!----End Navbar---->
 
   <!---Body---->
-  <div>
-    <div class="fondo_transparente">
-      <div class="modal">
+  <div class="fondo_transparente">
+    <div class="modal">
+      <section class="form-register">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su contraseña">
+        <input class="botons" type="submit" value="SUBMIT">
+
         <div class="modal_cerrar">
           <span>x</span>
         </div>
-        <div class="modal_titulo">LOG IN</div>
-        <form>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
-          </div>
-          <div class="">
-            <label for="Password">Password</label>
-            <input type="password" class="form-control pass" id="Firstname" placeholder="Type your password">
-          </div>
-
-          <div class="modal_botones">
-            <button type="submit" class="">Submit</button>
-          </div>
-
-      </div>
-      </form>
     </div>
+  </div>
+
   <div id="playlist">
 
-    <div id='list_of_playlist'class="playlist_list"></div>
-
+    <div id='list_of_playlist'class="playlist_list">
+      <h3> MY PLAYLIST </h3>
+    </div>
+ 
     <div class="next_song_list">
-      <h2 class="next_song_title">Next Song</h2>
+      <h2 class="next_song_title">NEXT SONG</h2>
       <ul class="cards">
         <li>
           <div class="container">
             <div class="card">      
               <div class="contentBx">
-                <h2>Next Song #</h2>
+                <h2>NEXT SONG #</h2>
                 <div class="size">                 
                   <span>The most beautiful song</span>
                 </div>           
@@ -87,7 +78,7 @@
           <div class="container">
             <div class="card">      
               <div class="contentBx">
-                <h2 >Next Song #</h2>
+                <h2>NETX SONG # </h2>
                 <div class="size">                 
                   <span>The most beautiful song</span>
                 </div>             
@@ -113,7 +104,7 @@
             <div class="container">
               <div class="card">      
                 <div class="contentBx">
-                  <h2>Next Song #</h2>
+                  <h2>NEXT SONG #</h2>
                   <div class="size">                 
                     <span>The most beautiful song</span>
                   </div>           
@@ -202,7 +193,7 @@
     });
 
     var options = [
-      set1 = ['Lo mejor 2020', 'Top exitos 21', 'Guitar songs', 'Best playlist', 'Rock and Roll', 'On repeat']
+      set1 = ['THE BEST OF 2020', 'TOP HITS 21', 'GUITAR SONGS', 'BEST PLAYLIST', 'ROCK ND ROLL', 'ON REPT']
     ];
 
     function makeUL(array) {

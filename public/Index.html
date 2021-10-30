@@ -42,32 +42,28 @@
 
     <div class="fondo_transparente">
       <div class="modal">
-        <div class="modal_cerrar">
-          <span>x</span>
-        </div>
-        <div class="modal_titulo">LOG IN</div>
-        <form>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
-          </div>
-          <div class="">
-            <label for="Password">Password</label>
-            <input type="password" class="form-control pass" id="Firstname" placeholder="Type your password">
-          </div>
+        <section class="form-register">
+          <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+          <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su contraseña">
+          <input class="botons" type="submit" value="SUBMIT">
 
-          <div class="modal_botones">
-            <button type="submit" class="">Submit</button>
+          <div class="modal_cerrar">
+            <span>x</span>
           </div>
-
       </div>
-      </form>
     </div>
-    <div class="sub_title">
-      <span>Sync your vibes</span>
+
+
+    <div class="sub_title_container">
+      <div class="sub_title">
+        <span>SYNC YOUR VIBES</span>
+      </div>
+      
     </div>
     <div class="button_section">
-      <a href="playlist.html"><button type="submit" class="start_button" style="color: #fff">Create a new playlist</button></a>
+          
+      <a href="playlist.html"><button type="submit" class="start_button"> 
+       CREATE A NEW PLAYLIST</button></a>
     </div>
   </div>
   </div>
@@ -88,7 +84,7 @@
           <ul class="nav__ul">
             <li>
               <a href="./contactus.html">Contact Us </a>
-            </li>            
+            </li>
             <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
             <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp fa-2x"></i></a>
             <li>
@@ -96,7 +92,7 @@
             </li>
             <i class="fab fa-apple fa-2x"></i>
             <i class="fab fa-android fa-2x"></i>
-          
+
 
           </ul>
 
@@ -127,6 +123,7 @@
   </div>
 
   <script>
+
     document.getElementById("btnabrir").addEventListener("click", function () {
       document.getElementsByClassName("fondo_transparente")[0].style.display = "block"
       return false

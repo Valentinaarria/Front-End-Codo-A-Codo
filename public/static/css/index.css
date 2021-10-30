@@ -11,25 +11,50 @@ body {
   }
 
   .button_section{
-      width: 18%;
-      margin: 0 41%;
+    position: relative;
+      
   }
 
+  .sub_title_container{
+    position: relative;
+  }
   .sub_title{
       text-align: center;
       color: #fff;
+      letter-spacing: 0.05em;
       padding-top: 5%;
-      font-size: x-large;
-      font-weight: bold;
       font: bold 3em/1.4 'Open Sans', arial, sans-serif;
+      width: 400px;
+      height: 350px;
+      position: absolute;
+      top: 50%;
+      left: 37%;
+     margin: -25px 0 0 -25px;
+     
   }
 
   .start_button{
-      width: 100%;
+      background-color: transparent;
       border-radius: 10px;
-      background-color: #3377B6;
-      padding: 1.5em 3em;
-      margin: 30em 0em;
-      font: bold 0.80em/1.4 'Open Sans', arial, sans-serif;
-      cursor: pointer;
-  }
+      letter-spacing: 0.05em;
+      color: #FFF;
+      background-color:#2575c0 ;
+      font-family: 'Open Sans', arial, sans-serif;
+      letter-spacing: 0.05em;
+      font-size: 18px;
+      font-weight: bold;
+      border:transparent;
+      padding: 0.1em 1em;
+      margin: 25em 0em;
+      width: 300px;
+      height: 50px;
+      position: absolute;
+      top: 35%;
+      left: 40%;
+      transition: 0.2s;
+
+    }    
+
+    
+    
+    

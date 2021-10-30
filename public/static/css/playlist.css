@@ -1,11 +1,6 @@
-
 body{
-  margin: 0;
-   color: #2F263A;
-   background-color:#7a758194;
-
+  background-color: #F4F2FB;
 }
-
 #playlist{
   height: 500px;
   display: flex;
@@ -13,24 +8,37 @@ body{
 
 .playlist_list{
   display:inline-block;
-  height: 380px;
-  background-color: #49405cab;
+  height: 400px;
+  background-color: #DDD9F9;
   width: 20%;
   margin: 3em 2em 3em 4em; 
   border-radius: 15px;
   flex-shrink: 0;
 }
+.playlist_list h3{  
+color:#A996AB;
+text-align: center;
+margin: 25px 0px 0px 0px;
+font:'Poppins', arial, sans-serif;
+letter-spacing: 0.07em;  
+font-size: 1.5em;
+font-weight: 800;
+  }
+
+
 
 .music_ul{
-  padding: 1.5em 1em;
+  padding: 1em 1em;
   display:table-cell;
   list-style: none;
-}
+  position: relative;
+  left: 4%;
+  }
 
 .cards {
   display: grid;
   position: relative;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 2rem;
   margin: 1rem 5vw;
   padding: 0;
@@ -39,35 +47,41 @@ body{
 }
 
 .music_ul li{
-  color: #fff;
-  background-color: #32193a79;
-  padding: 0.5em 3em;
-  border-radius: 15px ;
-  margin: 10px;
-  opacity: 0.7;
+  color: #516A6A;
+  padding: 0.6em 1em;
+  border-radius: 10px ;
+  margin: 15px;
   width: 100%;
+  font: 12px 'Open Sans', arial, sans-serif;
+  border: 1px solid #C0B1B1;
+  text-align: center;
+  letter-spacing:0.15em ;
 }
 
 .next_song_list{
   display:flex;
   flex-direction: column;
-  height: 400px;
-  background-color: #49405cab;
+  height: 450px;
+  background-color: #DDD9F9;
   width: 65%;
-  margin: 3em 3em;
+  margin: 2.5em 3em;
   border-radius: 15px;
   flex-shrink: 0;
 }
 
 .next_song_title{
-  color: #fff;
+  color: #A996AB;
   text-align: center;
-}
+  font:'Poppins', arial, sans-serif;
+  letter-spacing: 0.07em;  
+  font-size: 2.5em;
+  font-weight: 800;
+  }
 
 .music_player{
   display:block;
   height: 80px;
-  background-color: #49405cab;
+  background-color: #A19CAC;
   width: 70%;
   margin: 1em 10% 2em 20%;
   border-radius: 15px;
